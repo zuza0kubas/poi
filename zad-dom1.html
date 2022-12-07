@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hdisau</title>
+</head>
+<body>
+	<script type="text/javascript">
+		  document.getElementById("demo");
+	</script>
+
+	<p id="demo">Zofia minie</p>
+	<button onclick="myFunction()">czcionka</button>
+	<script>
+		function myFunction() {
+                document.getElementById("demo").style.fontWeight = "bold";
+}
+	</script>
+	<button onclick="kolor()">kolor</button>
+	<script>
+		function kolor() {
+                document.getElementById("demo").style.color = "#00ff15";
+}
+	</script>
+	<button onclick="resecik()">reset</button>
+	<script>
+		function resecik() {
+                document.getElementById("demo").style.color = "black";
+                document.getElementById("demo").style.fontWeight = "normal";
+}
+	</script>
+
+	<p id="demon">bIJJJJJJEEEEEEEEEE</p>
+	<button onclick="myFunctione()">czcionka</button>
+	<script>
+		function myFunctione() {
+                document.getElementById("demon").style.fontWeight = "bold";
+}
+	</script>
+	<button onclick="kolorek()">kolor</button>
+	<script>
+		function kolorek() {
+                document.getElementById("demon").style.color = "#ff0000";
+}
+	</script>
+
+	</script>
+	<button onclick="reset()">reset</button>
+	<script>
+		function reset() {
+                document.getElementById("demon").style.color = "black";
+                document.getElementById("demon").style.fontWeight = "normal";
+}
+	</script>
+	<script type="text/javascript">
+		  document.getElementById("server");
+	</script>
+	<div>masz srverów:</div>
+	<div id="server"></div>
+	<button onclick="serverekdodaj()">kup</button>
+	<button onclick="serverekodejmij()">sprzedaj</button>
+	<script>
+		let wartosc = 0;
+		document.getElementById("server").innerHTML = wartosc;
+		function serverekdodaj() {
+            wartosc += 1;
+            document.getElementById("server").innerHTML = wartosc;
+            if (wartosc<2){
+			document.getElementById("server").style.color = "#ff0000";
+		}
+		else if (wartosc>2&&wartosc<5){
+			document.getElementById("server").style.color = "#cc9900";
+		}
+		else if (wartosc>5){
+			document.getElementById("server").style.color = "#33cc33";
+		}
+		}
+		function serverekodejmij() {
+			if (wartosc>0){
+			wartosc -= 1;
+			document.getElementById("server").innerHTML = wartosc;
+		}
+		if (wartosc<2){
+			document.getElementById("server").style.color = "#ff0000";
+		}
+		else if (wartosc>2&&wartosc<5){
+			document.getElementById("server").style.color = "#cc9900";
+		}
+		else if (wartosc>5){
+			document.getElementById("server").style.color = "#33cc33";
+		}
+		}
+	</script>
+	<div id="kup">
+	<button onclick="wiele()">kup wiele sztók</button>
+		<script>
+		function wiele() {
+        document.getElementById("wiele").textContent = field.value;
+    }
+</script>
+</script>
+</body>
+</html>
