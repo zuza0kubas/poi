@@ -1,0 +1,29 @@
+<form>
+    <legend>Jaki napuj z rana preferujesz?</legend>
+    <input type="radio" value="z rana lubisz pić kawę" name="radio"> kawa
+    <input type="radio" value="z rana lubisz pić herbatę" name="radio"> herbata
+    <input type="radio" value="z rana preferujesz degustować płyn z dusz dzieci" name="radio"> dusze dzieci
+</form>
+
+<legend>Wpisz rodzaj</legend>
+<input type="text" id="pole">
+
+<button onclick="display()">Wyślij</button>
+<p id="test1"> ... </p>
+<p id="test2"> ... </p>
+
+     <script type="text/javascript">
+        function display() {
+            var field = document.getElementsByName('radio');
+            var value1;
+            for(var i = 0; i < field.length; i++){
+                if(field[i].checked){
+                    value1 = field[i].value;
+                }
+            }
+
+                var napis = document.getElementById("pole").value;
+                document.getElementById("test2").textContent = "typu "+value1;
+            }
+        
+</script>
