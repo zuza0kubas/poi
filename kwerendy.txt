@@ -1,0 +1,13 @@
+1.	SELECT COUNT(*)
+	FROM sportowiec
+
+2.	SELECT imie, nazwisko 
+	FROM sportowiec 
+	WHERE ID=1
+
+3.	SELECT AVG(wynik) 
+	FROM wyniki
+
+4.	SELECT MAX(wynik)
+	FROM wyniki 
+	WHERE dyscyplina_id=3
